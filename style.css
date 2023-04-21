@@ -64,3 +64,15 @@ text-align: center;
 .media iframe {
 width: 100%;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
