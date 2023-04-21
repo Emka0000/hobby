@@ -76,3 +76,25 @@ footer {
 footer p {
     font-size: 14px;
 }
+@media print {
+    body {
+        margin: 0;
+    }
+    header, footer, nav {
+        display: none;
+    }
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    button, a {
+        display: none;
+    }
+    iframe {
+        visibility: hidden;
+    }
+    .media {
+        visibility: hidden;;
+    }
+}

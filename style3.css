@@ -58,7 +58,7 @@ header {
     article {
         margin: 20px 0;
         padding: 10px 24em;
-        border: 1px solid black;
+        font-size: 18px;
       }
     @media only screen and (max-width: 600px) {
         article {
@@ -156,4 +156,29 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+@media print {
+    body {
+        margin: 0;
+    }
+    header, footer, nav {
+        display: none;
+    }
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    button, a {
+        display: none;
+    }
+    iframe {
+        visibility: hidden;
+    }
+    .media {
+        visibility: hidden;;
+    }
+    article {
+        padding: 10px 10px;
+    }
 }
